@@ -39,7 +39,7 @@ export interface IEpisode{
     characters: string[];
 }
 
-export interface Ilocation{
+export interface ILocation{
     id: number;
     name: string;
     type: string;
