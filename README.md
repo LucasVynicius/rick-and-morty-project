@@ -2,9 +2,7 @@
 
 Bem-vindo ao Portal Rick and Morty! Uma aplicação web criada como parte de um desafio de pós-graduação, focada em consumir a [The Rick and Morty API](https://rickandmortyapi.com/) e apresentar os dados de forma moderna, interativa e visualmente atraente.
 
-**Confira o projeto no ar: [Link para o deploy na Vercel/Netlify]**
-
-![Prévia do Projeto](link-para-uma-imagem-ou-gif-do-seu-projeto.gif)
+**Confira o projeto no ar: [(https://rick-and-morty-project-nine.vercel.app/characters)]**
 
 ## ✨ Funcionalidades
 
@@ -34,7 +32,7 @@ Siga os passos abaixo para executar o projeto em sua máquina.
 
 1.  **Clone o repositório**
     ```bash
-    git clone [https://github.com/](https://github.com/)[SEU-USUARIO-DO-GITHUB]/[NOME-DO-SEU-REPOSITORIO].git
+    git clone [(https://github.com/LucasVynicius/rick-and-morty-project.git)]
     ```
 
 2.  **Acesse a pasta do projeto**
@@ -56,9 +54,9 @@ Siga os passos abaixo para executar o projeto em sua máquina.
 
 ## 👨‍💻 Autor
 
-Feito com ❤️ por **[Seu Nome Completo]**.
+Feito com ❤️ por **Lucas Albuquerque**.
 
-* **LinkedIn**: [Link para o seu perfil do LinkedIn]
-* **GitHub**: @[Seu-Usuario-do-GitHub]
+* **LinkedIn**: [(https://www.linkedin.com/in/lvyni-albuquerque/)]
+* **GitHub**: @[https://github.com/LucasVynicius]
 
 ---
