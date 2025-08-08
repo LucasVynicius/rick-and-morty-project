@@ -1,20 +1,20 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
-import { motion } from 'framer-motion'; // 1. O import que estava faltando
+import { motion } from 'framer-motion'; 
 import type { IApiResponse, ICharacter, IInfo } from '../../Types/api';
-import { CharacterCard } from '../../Components/CharactersCard'; // Corrigi o caminho para o padrão
+import { CharacterCard } from '../../Components/CharactersCard'; 
 import { Pagination } from '../../Components/Pagination';
-import { SkeletonCard } from '../../Components/SkeletonCard'; // 2. Importando nosso SkeletonCard
+import { SkeletonCard } from '../../Components/SkeletonCard';
 
 const API_URL = 'https://rickandmortyapi.com/api/character';
 
-// As variantes da animação continuam as mesmas
+
 const containerVariants = {
   hidden: { opacity: 0 },
   visible: {
     opacity: 1,
     transition: {
-      staggerChildren: 0.08, // Ajustei o tempo para ficar mais rápido e fluido
+      staggerChildren: 0.08, 
     },
   },
 };
@@ -50,7 +50,6 @@ export const CharacterList = () => {
             <h1>Personagens de Rick and Morty</h1>
             <Pagination info={info} currentPage={currentPage} onPageChange={fetchData} />
             
-            {/* 3. Unificamos a renderização aqui. Este é o único container da lista agora. */}
             <motion.div
               className="item-grid"
               variants={containerVariants}
@@ -58,7 +57,7 @@ export const CharacterList = () => {
               animate="visible"
             >
                 {loading ? (
-                    // 4. Usando o Skeleton Loading para uma melhor UX
+
                     Array.from({ length: 20 }).map((_, index) => (
                         <SkeletonCard key={index} />
                     ))
@@ -71,7 +70,6 @@ export const CharacterList = () => {
                 )}
             </motion.div>
 
-            {/* Só mostra a paginação inferior se não estiver carregando */}
             {!loading && <Pagination info={info} currentPage={currentPage} onPageChange={fetchData} />}
         </div>
     );
